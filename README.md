@@ -1,7 +1,7 @@
 VEDA Core integration/staging tree
 ===================================
 
-https://vedaproject.me
+https://www.vedacoin.net
 
 What is VEDA?
 --------------
@@ -13,7 +13,7 @@ out collectively by the network. VEDA Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the VEDA Core software, see https://vedaproject.me/.
+the VEDA Core software, see https://www.vedacoin.net/.
 
 License
 -------
@@ -37,7 +37,7 @@ match the project's coding conventions (see [doc/coding.md](doc/coding.md)) or a
 controversial.
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/Utopianer/VedaCore/tags) are created
+completely stable. [Tags](https://github.com/Veda-Project/Veda-Core/tags) are created
 regularly to indicate new official, stable release versions of VEDA.
 
 Testing
