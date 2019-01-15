@@ -1,5 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018 The VEDA developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -14,6 +15,7 @@
 #include "net.h"
 #include "sync.h"
 #include "util.h"
+#include <boost/lexical_cast.hpp>
 
 using namespace std;
 
@@ -367,9 +369,9 @@ public:
         return true;
     }
 
-    // Verify and vote on finalized budget
-    void CheckAndVote();
-    //total pivx paid out by this budget
+    //check to see if we should vote on this
+    void AutoCheck();
+    //total veda paid out by this budget
     CAmount GetTotalPayout();
     //vote on this finalized budget as a masternode
     void SubmitVote();
@@ -524,7 +526,7 @@ public:
 
     void CleanAndRemove(bool fSignatureCheck);
 
-    uint256 GetHash() const
+    uint256 GetHash()
     {
         CHashWriter ss(SER_GETHASH, PROTOCOL_VERSION);
         ss << strProposalName;

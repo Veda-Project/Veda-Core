@@ -114,10 +114,10 @@ AC_ARG_ENABLE(exhaustive_tests,
     [use_exhaustive_tests=$enableval],
     [use_exhaustive_tests=yes])
 
-AC_ARG_ENABLE(endomorphism,
-    AS_HELP_STRING([--enable-endomorphism],[enable endomorphism (default is no)]),
-    [use_endomorphism=$enableval],
-    [use_endomorphism=no])
+AC_ARG_ENABLE(envedarphism,
+    AS_HELP_STRING([--enable-envedarphism],[enable envedarphism (default is no)]),
+    [use_envedarphism=$enableval],
+    [use_envedarphism=no])
 
 AC_ARG_ENABLE(ecmult_static_precomputation,
     AS_HELP_STRING([--enable-ecmult-static-precomputation],[enable precomputed ecmult table for signing (default is yes)]),
@@ -419,8 +419,8 @@ if test x"$set_bignum" = x"gmp"; then
   SECP_INCLUDES="$SECP_INCLUDES $GMP_CPPFLAGS"
 fi
 
-if test x"$use_endomorphism" = x"yes"; then
-  AC_DEFINE(USE_ENDOMORPHISM, 1, [Define this symbol to use endomorphism optimization])
+if test x"$use_envedarphism" = x"yes"; then
+  AC_DEFINE(USE_ENVEDARPHISM, 1, [Define this symbol to use envedarphism optimization])
 fi
 
 if test x"$set_precomp" = x"yes"; then
@@ -446,7 +446,7 @@ AC_MSG_NOTICE([Using assembly optimizations: $set_asm])
 AC_MSG_NOTICE([Using field implementation: $set_field])
 AC_MSG_NOTICE([Using bignum implementation: $set_bignum])
 AC_MSG_NOTICE([Using scalar implementation: $set_scalar])
-AC_MSG_NOTICE([Using endomorphism optimizations: $use_endomorphism])
+AC_MSG_NOTICE([Using envedarphism optimizations: $use_envedarphism])
 AC_MSG_NOTICE([Building benchmarks: $use_benchmark])
 AC_MSG_NOTICE([Building for coverage analysis: $enable_coverage])
 AC_MSG_NOTICE([Building ECDH module: $enable_module_ecdh])

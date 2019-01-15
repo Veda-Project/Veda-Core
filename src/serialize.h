@@ -1,11 +1,12 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018 The VEDA developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PIVX_SERIALIZE_H
-#define PIVX_SERIALIZE_H
+#ifndef VEDA_SERIALIZE_H
+#define VEDA_SERIALIZE_H
 
 #include <algorithm>
 #include <assert.h>
@@ -965,4 +966,4 @@ public:
     }
 };
 
-#endif // PIVX_SERIALIZE_H
+#endif // VEDA_SERIALIZE_H
